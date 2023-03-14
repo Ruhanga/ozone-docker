@@ -186,7 +186,7 @@ services:
 
   # OpenMRS 3 Microfrontends
   frontend:
-    image: openmrs/openmrs-reference-application-3-frontend:3.0.0-beta.2
+    image: openmrs/openmrs-reference-application-3-frontend:nightly
     environment:
       SPA_PATH: /openmrs/spa
       API_URL: /openmrs
