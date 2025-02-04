@@ -55,6 +55,7 @@ services:
       - "${BAHMNI_CONFIG_VOLUME:?}:/etc/bahmni_config/:ro"
       - "bahmni-lab-results:/home/bahmni/uploaded_results"
       - "bahmni-uploaded-files:/home/bahmni/uploaded-files"
+      - "${BAHMNI_OPENMRS_CORE_PATH:bahmni-openmrs-core}:/openmrs/distribution/openmrs_core/"
       - "${BAHMNI_OPENMRS_MODULES_PATH:?}/:/openmrs/distribution/openmrs_modules/"
       - 'bahmni-patient-images:/home/bahmni/patient_images'
       - 'bahmni-document-images:/home/bahmni/document_images'

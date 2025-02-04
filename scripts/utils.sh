@@ -46,6 +46,7 @@ function exportPaths () {
     export ORTHANC_CONFIG_PATH=$DISTRO_PATH/configs/orthanc/initializer_config
     export BAHMNI_OPENMRS_MODULES_PATH=$DISTRO_PATH/binaries/bahmniemr/modules
     export BAHMNI_CONFIG_OVERRIDE_PATH=$DISTRO_PATH/configs/bahmni
+    export BAHMNI_OPENMRS_CORE_PATH=$DISTRO_PATH/binaries/bahmniemr/openmrs_core
 
     echo "→ OPENMRS_CONFIG_PATH=$OPENMRS_CONFIG_PATH"
     echo "→ OPENMRS_PROPERTIES_PATH=$OPENMRS_PROPERTIES_PATH"
@@ -70,6 +71,7 @@ function exportPaths () {
     echo "→ ORTHANC_CONFIG_PATH=$ORTHANC_CONFIG_PATH"
     echo "→ BAHMNI_OPENMRS_MODULES_PATH=$BAHMNI_OPENMRS_MODULES_PATH"
     echo "→ BAHMNI_CONFIG_OVERRIDE_PATH=$BAHMNI_CONFIG_OVERRIDE_PATH"
+    echo "→ BAHMNI_OPENMRS_CORE_PATH=$BAHMNI_OPENMRS_CORE_PATH"
 }
 
 function setDockerComposeCLIOptions () {
